@@ -40,7 +40,6 @@
   <body>
     <div class="w-full kid flex">
       <button
-        onclick="open()"
         id="open"
         class="mx-auto mt-[6rem] text-[#fff] bg-[#22BBF3] text-[2rem] px-[2rem] rounded-2xl"
       >
@@ -336,8 +335,8 @@
         closeModal.classList.add("hidden");
       });
       document.getElementById("open").addEventListener("click", function () {
-        // var closeModal = document.getElementById("modal");
-        // closeModal.classList.replace("hidden",'');
+        var closeModal = document.getElementById("modal");
+        closeModal.classList.remove("hidden");
       });
     </script>
   </body>
